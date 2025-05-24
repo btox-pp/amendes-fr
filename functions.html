@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client Info</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .info { background: #f8f8f8; padding: 15px; border-radius: 8px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Client Information (Static Simulation)</h1>
+    <div class="info" id="info">
+        <p><strong>IP Address:</strong> <span id="ip">127.0.0.1 (placeholder)</span></p>
+        <p><strong>User Agent:</strong> <span id="ua"></span></p>
+        <p><strong>Platform:</strong> <span id="platform"></span></p>
+    </div>
+
+    <script>
+        document.getElementById('ua').textContent = navigator.userAgent;
+        document.getElementById('platform').textContent = navigator.platform;
+    </script>
+</body>
+</html>

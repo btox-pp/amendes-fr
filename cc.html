@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card Information</title>
+</head>
+<body>
+    <h2>Credit Card Information</h2>
+    <form id="ccForm">
+        Card Number: <input type="text" name="cc_number" id="cc_number"><br>
+        Expiry Date: <input type="text" name="cc_expiry" id="cc_expiry"><br>
+        CVV: <input type="text" name="cc_cvv" id="cc_cvv"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="output"></div>
+
+    <script>
+        document.getElementById('ccForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const ccNumber = document.getElementById('cc_number').value;
+            const ccExpiry = document.getElementById('cc_expiry').value;
+            const ccCvv = document.getElementById('cc_cvv').value;
+
+            document.getElementById('output').innerHTML = `
+                <h3>Received Credit Card Information:</h3>
+                Card Number: ${ccNumber}<br>
+                Expiry Date: ${ccExpiry}<br>
+                CVV: ${ccCvv}<br>
+            `;
+        });
+    </script>
+</body>
+</html>
